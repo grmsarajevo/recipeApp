@@ -12,6 +12,16 @@ export class ShoppingListComponent implements OnInit {
     new Ingredient('Tomatos', 10)
   ];
 
+  tempVal;
+
+  
+  onIngredientAdded(vallTo: Ingredient) {
+    console.log(this.ingredients);
+    this.ingredients.push(vallTo);
+    console.log(this.ingredients);
+  }
+  
+
   constructor() { }
 
   ngOnInit() {
